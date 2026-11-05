@@ -1,0 +1,59 @@
+name: Bug report
+description: Training, evaluation or inference fails / 训练、评估或推理出错
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please try the synthetic-data path in the README Quickstart —
+        it verifies the whole pipeline without any real dataset.
+        提交前请先按 README 的 Quickstart 用合成数据跑一遍，能排除大部分环境问题。
+
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What happens / 问题现象
+      description: What did you expect, and what happened instead? / 期望的结果与实际结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      placeholder: |
+        python tools/make_dummy_dataset.py --n 16
+        python tools/build_annotations.py
+        python train.py
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / 运行环境
+      placeholder: Ubuntu 20.04 · Python 3.10 · torch 1.13.1+cu117 · RTX 3090 · CUDA 11.7
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage / 出问题的阶段
+      options:
+        - Environment setup (uv sync)
+        - Data conversion (tools/vod_to_voc.py)
+        - Training (train.py)
+        - Evaluation (AP@0.35 / AP@0.50)
+        - Inference (infer.py)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Traceback / 报错日志
+      description: Paste the full traceback. / 请贴完整报错
+      render: shell

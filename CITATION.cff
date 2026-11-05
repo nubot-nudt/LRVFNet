@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this code or the pretrained weights, please cite the paper below."
+title: "LRVFNet: Deep LiDAR-Radar-Visual Fusion for Object Detection in Urban Environments"
+type: software
+authors:
+  - family-names: Xiao
+    given-names: Yuhan
+  - family-names: Liu
+    given-names: Yufei
+  - family-names: Luan
+    given-names: Kai
+  - family-names: Cheng
+    given-names: Yuwei
+  - family-names: Chen
+    given-names: Xieyuanli
+  - family-names: Lu
+    given-names: Huimin
+license: GPL-3.0
+url: "https://github.com/nubot-nudt/LRVFNet"
+repository-code: "https://github.com/nubot-nudt/LRVFNet"
+preferred-citation:
+  type: article
+  title: "Deep LiDAR-Radar-Visual Fusion for Object Detection in Urban Environments"
+  authors:
+    - family-names: Xiao
+      given-names: Yuhan
+    - family-names: Liu
+      given-names: Yufei
+    - family-names: Luan
+      given-names: Kai
+    - family-names: Cheng
+      given-names: Yuwei
+    - family-names: Chen
+      given-names: Xieyuanli
+    - family-names: Lu
+      given-names: Huimin
+  journal: "Remote Sensing"
+  volume: 15
+  issue: 18
+  start: 4433
+  year: 2023
+  doi: "10.3390/rs15184433"

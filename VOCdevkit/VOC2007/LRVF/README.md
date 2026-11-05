@@ -1,0 +1,1 @@
+for fusion module img files

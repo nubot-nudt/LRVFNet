@@ -1,0 +1,30 @@
+name: Usage question
+description: How to run, adapt or reproduce something / 使用、复现或改造上的问题
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For "how do I run this" the README Quickstart and the project page usually answer it.
+        使用类问题通常能在这两处找到答案，先看一眼再提问。
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question / 问题
+      description: What are you trying to do, and where are you stuck? / 你想做什么，卡在哪一步
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried / 已经尝试过的
+      description: Commands you ran, what the output was. / 跑过什么命令、输出是什么
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / 运行环境
+      placeholder: Ubuntu 20.04 · Python 3.10 · torch 1.13.1+cu117 · RTX 3090 · CUDA 11.7

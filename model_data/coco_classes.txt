@@ -1,0 +1,13 @@
+bicycle_rack
+Car
+Pedestrian
+bicycle
+Cyclist
+rider
+moped_scooter
+ride_other
+truck
+motor
+ride_uncertain
+vehicle_other
+human_depiction

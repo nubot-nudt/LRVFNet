@@ -1,0 +1,14 @@
+# PyTorch CUDA 11.7 build — install first with:
+#   pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 \
+#       --extra-index-url https://download.pytorch.org/whl/cu117
+torch==1.13.1
+torchvision==0.14.1
+tensorboard==2.21.0
+
+numpy==1.23.5
+scipy==1.10.0
+matplotlib==3.7.5
+opencv-python==4.8.1.78
+pillow==9.5.0
+tqdm==4.66.1
+h5py==3.10.0

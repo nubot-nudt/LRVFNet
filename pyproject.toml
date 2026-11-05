@@ -1,0 +1,30 @@
+[project]
+name = "lrvfnet"
+version = "1.0.0"
+description = "Deep LiDAR-Radar-Visual Fusion for Object Detection in Urban Environments"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = { text = "GPL-3.0" }
+
+dependencies = [
+    "torch==1.13.1+cu117",
+    "torchvision==0.14.1+cu117",
+    "numpy==1.23.5",
+    "scipy==1.10.0",
+    "matplotlib==3.7.5",
+    "opencv-python==4.8.1.78",
+    "pillow==9.5.0",
+    "tqdm==4.66.1",
+    "h5py==3.10.0",
+    "tensorboard==2.21.0",
+]
+
+# PyTorch CUDA 11.7 wheels live on a separate index.
+[tool.uv.sources]
+torch = { index = "pytorch-cu117" }
+torchvision = { index = "pytorch-cu117" }
+
+[[tool.uv.index]]
+name = "pytorch-cu117"
+url = "https://download.pytorch.org/whl/cu117"
+explicit = true

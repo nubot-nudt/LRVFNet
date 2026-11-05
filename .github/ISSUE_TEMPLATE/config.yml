@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Quickstart and dataset layout / 快速开始与数据格式
+    url: https://github.com/nubot-nudt/LRVFNet#quickstart--run-the-pipeline-on-synthetic-data
+    about: Run the whole pipeline on synthetic data, and the VOC + LRVF layout the code expects.
+  - name: Paper / 论文
+    url: https://doi.org/10.3390/rs15184433
+    about: Remote Sensing 15(18):4433 — the method, the BEV construction and the reported AP.
+  - name: Project page / 项目主页
+    url: https://nubot-nudt.github.io/LRVFNet/
+    about: Results tables, figures and citation.
